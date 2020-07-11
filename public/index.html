@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 class="title">Stop Watch</h1>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col div-holder">
+                <h1 class="label">Min</h1>
+                <h1 class="label">Sec</h1>
+                <h1 class="label">MSec</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col div-content">
+                <h1 id="min" class="content">00</h1><span class="content-span">:</span>
+                <h1 id="sec" class="content">00</h1><span class="content-span">:</span>
+                <h1 id="msec" class="content">00</h1><span class="content-span d-none">:</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col div-holder">
+                <button id="start" onclick="start()" type="button" class="btn bg-success text-light btn-circle btn-md"><i class="fa fa-play"></i></button>
+                <button onclick="stop()" type="button" class="btn bg-danger text-light btn-circle btn-md"><i
+                        class="fa fa-pause"></i></button>
+                <button onclick="lapTimer()" id="lapButton" type="button" class="btn btn-primary btn-circle btn-md"><i
+                        class="fas fa-stopwatch"></i></button>
+                <button onclick="reset()" type="button" class="btn btn-primary btn-circle btn-md"><i
+                        class="fa fa-refresh"></i></button>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col">
+                <h1 class="laps-title">Your Laps</h1>
+            </div>
+            <div class="col">
+                <button class="clear-laps" onclick="clearLaps()">Clear Laps</button>
+            </div>
+        </div>
+
+
+        <div>
+        </div>
+        <div class="laps mt-4" id="getlaps">
+            <div></div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="https://use.fontawesome.com/931bd37ef8.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+
+
+</html>
